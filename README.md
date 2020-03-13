@@ -1,5 +1,5 @@
 # Status: INACTIVE
-This project is no longer being maintained. Code will continue to exist here for legacy purposes and folks are free to fork and do with it as they please. The docker images produced by this project will remain on **dockerhub** but will no longer receive updates nor will any new versions be released.
+This project is **no longer being maintained**. Code will continue to exist here for legacy purposes and folks are free to fork and do with it as they please. The docker images produced by this project will remain on **dockerhub** but will no longer receive updates nor will any new versions be released.
 
 # postgres-pljava-openjdk
 Based on the image [xxBedy/postgres-pljava](https://github.com/xxBedy/postgres-pljava) but using openjdk as oracle jdk is not redistributable without first accepting the end-user license.
