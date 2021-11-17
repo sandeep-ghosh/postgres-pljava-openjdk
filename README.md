@@ -5,7 +5,7 @@ Used latest Postgresql (compatible with Pega), and latest version of Pl/Java. Co
 
 Also added two more docker environment variables to pass the database dump file which would be loaded into the database when it's initialised for the first time.
 
-DUMP_FILENAME (dump file to load to db)
+DUMP_FILENAME (dump file to load to db)<br/>
 IMPORT_DUMP (should be true if dump file needs to be loaded during initialisation)
 
 Mount the folder containing the dump file to '/media'
