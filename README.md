@@ -1,9 +1,13 @@
-# Status: INACTIVE
-This project is **no longer being maintained**. Code will continue to exist here for legacy purposes and folks are free to fork and do with it as they please. The docker images produced by this project will remain on **dockerhub** but will no longer receive updates nor will any new versions be released.
-
 # postgres-pljava-openjdk
-Based on the image [xxBedy/postgres-pljava](https://github.com/xxBedy/postgres-pljava) but using openjdk as oracle jdk is not redistributable without first accepting the end-user license.
+This is forked from [pegasystems/postgres-pljava-openjdk](https://github.com/pegasystems/postgres-pljava-openjdk)
 
-Furthermore, this image has been optimized to be as small as possible. The aforementioned image this was based on currently sits at 1.4GB. This image, after the various optimizations made (we're not squashing), is just shy of 450MB.
+Used latest Postgresql (compatible with Pega), and latest version of Pl/Java. Compiled the binary in Apple Silicon (arm64).
 
-Image can be found here: [pegasystems/postgres-pljava-openjdk](https://hub.docker.com/r/pegasystems/postgres-pljava-openjdk/)
+Also added two more docker environment variables to pass the database dump file which would be loaded into the database when it's initialised for the first time.
+
+DUMP_FILENAME (dump file to load to db)
+IMPORT_DUMP (should be true if dump file needs to be loaded during initialisation)
+
+Mount the folder containing the dump file to '/media'
+
+Image can be found here: [sandeepgh/postgres-pljava-openjdk](https://hub.docker.com/r/sandeepgh/postgres-pljava-openjdk)
